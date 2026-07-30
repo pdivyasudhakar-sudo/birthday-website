@@ -1,0 +1,1132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    min-height:100vh;
+    background:linear-gradient(135deg,#ffe1ed,#ffffff);
+    font-family:"Segoe Print","Comic Sans MS",cursive;
+    overflow:auto;
+
+}
+
+
+/* Floating Hearts */
+
+.hearts{
+
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:0;
+
+}
+
+
+.hearts span{
+
+    position:absolute;
+    bottom:-60px;
+    animation:float 10s linear infinite;
+    font-size:35px;
+
+}
+
+
+.hearts span:nth-child(1){
+left:5%;
+animation-delay:0s;
+}
+
+.hearts span:nth-child(2){
+left:20%;
+font-size:45px;
+animation-delay:2s;
+}
+
+.hearts span:nth-child(3){
+left:35%;
+font-size:30px;
+animation-delay:4s;
+}
+
+.hearts span:nth-child(4){
+left:50%;
+font-size:50px;
+animation-delay:1s;
+}
+
+.hearts span:nth-child(5){
+left:65%;
+font-size:38px;
+animation-delay:5s;
+}
+
+.hearts span:nth-child(6){
+left:80%;
+font-size:45px;
+animation-delay:7s;
+}
+
+.hearts span:nth-child(7){
+left:90%;
+font-size:28px;
+animation-delay:3s;
+}
+
+
+
+@keyframes float{
+
+0%{
+transform:translateY(0) rotate(0);
+opacity:0;
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh) rotate(360deg);
+opacity:0;
+}
+
+}
+
+
+
+/* Main Card */
+
+
+.container{
+
+position:relative;
+z-index:2;
+
+width:90%;
+max-width:520px;
+
+background:white;
+
+padding:40px 30px;
+
+margin:auto;
+
+text-align:center;
+
+border-radius:35px;
+
+border:3px solid #ff9fc5;
+
+box-shadow:0 15px 40px rgba(255,105,150,0.3);
+
+animation:appear 1s ease;
+
+position:relative;
+z-index:2;
+
+width:90%;
+max-width:520px;
+
+background:white;
+
+padding:35px 30px;
+
+margin:40px auto;
+
+text-align:center;
+
+border-radius:35px;
+
+border:3px solid #ff9fc5;
+
+box-shadow:0 15px 40px rgba(255,105,150,0.3);
+
+animation:appear 1s ease;
+
+}
+
+
+
+@keyframes appear{
+
+from{
+
+opacity:0;
+transform:translateY(-50%) scale(.7);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(-50%) scale(1);
+
+}
+
+}
+
+
+
+h1{
+
+font-family:'Pacifico',cursive;
+color:#ff4f91;
+font-size:45px;
+
+}
+
+
+
+p{
+
+color:#666;
+font-size:18px;
+line-height:1.8;
+
+}
+
+
+
+/* Buttons */
+
+
+button{
+
+margin-top:25px;
+
+padding:15px 35px;
+
+border:none;
+
+border-radius:40px;
+
+background:#ff6fa8;
+
+color:white;
+
+font-size:18px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+
+button:hover{
+
+background:#ff4081;
+transform:scale(1.08);
+
+}
+
+
+
+/* Notes */
+
+.note{
+
+background:#fff2f8;
+
+padding:18px;
+
+margin:15px;
+
+border-radius:20px;
+
+color:#d63384;
+
+font-size:18px;
+font-family:"Segoe Print","Comic Sans MS",cursive;
+
+
+box-shadow:0 5px 15px rgba(255,105,150,.2);
+
+}
+
+
+
+/* CAKE */
+
+
+.cake{
+
+position:relative;
+
+width:220px;
+
+margin:40px auto;
+
+}
+
+
+.cake-layer{
+
+height:45px;
+
+margin:auto;
+
+background:linear-gradient(#ffb6d5,#ff5f9e);
+
+border-radius:20px;
+
+box-shadow:0 5px 15px #ccc;
+
+}
+
+
+.layer1{
+width:220px;
+}
+
+.layer2{
+width:180px;
+}
+
+.layer3{
+width:140px;
+}
+
+
+
+.icing{
+
+height:25px;
+
+width:200px;
+
+background:white;
+
+border-radius:50%;
+
+position:absolute;
+
+top:40px;
+
+left:10px;
+
+}
+
+
+
+.candle{
+
+font-size:45px;
+
+text-align:center;
+
+animation:flame 1s infinite alternate;
+
+}
+
+
+
+@keyframes flame{
+
+from{
+transform:scale(1);
+}
+
+to{
+transform:scale(1.3);
+}
+
+}
+
+
+
+/* Countdown */
+
+
+#countdown{
+
+font-size:80px;
+
+color:#ff4f91;
+
+font-family:'Pacifico';
+
+}
+
+
+
+/* Dark mode */
+
+.darkScreen{
+
+background:#111 !important;
+
+}
+
+
+
+/* Mobile */
+
+
+@media(max-width:600px){
+
+h1{
+
+font-size:34px;
+
+}
+
+.container{
+
+padding:25px 15px;
+
+}
+
+p{
+
+font-size:16px;
+
+}
+
+}
+   .container{
+
+    position:relative;
+    z-index:2;
+
+    width:90%;
+    max-width:520px;
+
+    background:white;
+
+    padding:35px 30px;
+
+    margin:40px auto;
+
+    text-align:center;
+
+    border-radius:35px;
+
+    border:3px solid #ff9fc5;
+
+    box-shadow:0 15px 40px rgba(255,105,150,0.3);
+
+    animation:appear 1s ease;
+
+}
+
+
+h1{
+    font-size:38px;
+}
+
+
+p{
+    font-size:16px;
+    line-height:1.6;
+}
+
+
+button{
+    padding:13px 28px;
+    font-size:16px;
+}
+
+
+/* Hearts size adjustment */
+
+.hearts span{
+    font-size:25px;
+}
+
+
+.hearts span:nth-child(2){
+    font-size:35px;
+}
+
+.hearts span:nth-child(4){
+    font-size:40px;
+}
+
+.hearts span:nth-child(6){
+    font-size:32px;
+}
+/* GIFTS */
+
+/* GIFTS PAGE */
+
+.giftPage{
+    text-align:center;
+    padding:30px 20px;
+}
+
+
+.giftContainer{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    max-width:800px;
+    margin:30px auto;
+
+}
+
+
+.gift{
+
+    position:relative;
+
+    width:140px;
+    height:140px;
+
+    margin:auto;
+
+    background:#ffb6d5;
+
+    border-radius:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:55px;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(255,105,150,0.3);
+
+    transition:0.3s;
+
+}
+
+
+.gift:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+/* Note popup */
+
+.note{
+
+    display:none;
+
+    position:absolute;
+
+    top:155px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:220px;
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    color:#d63384;
+
+    font-size:14px;
+    font-family:"Segoe Print","Comic Sans MS",cursive;
+
+    line-height:1.5;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+    z-index:5;
+
+}
+
+
+.gift.open .note{
+
+    display:block;
+
+}
+
+
+
+#nextBtn{
+
+    display:none;
+
+    margin-top:60px;
+
+}
+
+
+
+@media(max-width:800px){
+
+.giftContainer{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.gift{
+
+    width:120px;
+    height:120px;
+    font-size:45px;
+
+}
+
+}
+/* Gift Boxes */
+
+.giftContainer{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+max-width:750px;
+margin:40px auto;
+
+}
+
+
+.gift{
+
+width:150px;
+height:150px;
+
+background:#ff8fbd;
+
+border-radius:25px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:70px;
+
+cursor:pointer;
+
+position:relative;
+
+box-shadow:0 10px 25px rgba(255,105,150,0.3);
+
+transition:.4s;
+
+}
+
+
+.gift:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+/* Note inside the gift */
+
+.note{
+
+display:none;
+
+position:absolute;
+
+width:100%;
+height:100%;
+
+top:0;
+left:0;
+
+background:#fff5fa;
+
+border-radius:25px;
+
+padding:15px;
+
+font-size:14px;
+font-family:"Segoe Print","Comic Sans MS",cursive;
+
+
+color:#d63384;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+box-sizing:border-box;
+
+}
+
+
+
+.gift.open .note{
+
+display:flex;
+
+}
+
+
+
+.gift.open{
+
+background:white;
+
+font-size:0;
+
+}
+
+
+
+@media(max-width:800px){
+
+.giftContainer{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.gift{
+
+width:130px;
+height:130px;
+
+}
+
+}
+.note{
+
+display:none;
+
+position:absolute;
+
+width:100%;
+height:100%;
+
+top:0;
+left:0;
+
+background:#fff5fa;
+
+border-radius:25px;
+
+padding:15px;
+
+font-size:14px;
+
+color:#d63384;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+box-sizing:border-box;
+
+}
+
+
+.gift.open .note{
+
+display:flex;
+
+}
+/* CAKE PAGE CENTER */
+
+.cakePage{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    background:linear-gradient(135deg,#ffe1ed,#ffffff);
+
+}
+
+
+.cakeTitle{
+
+    text-align:center;
+
+    font-family:'Pacifico',cursive;
+
+    color:#ff4f91;
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+
+#cake{
+
+    font-size:120px;
+
+    margin:30px;
+
+    animation:bounce 1.5s infinite;
+
+}
+
+
+#countdown{
+
+    font-size:80px;
+
+    color:#ff4f91;
+
+    font-family:'Pacifico',cursive;
+
+}
+
+
+#blowText{
+
+    font-size:25px;
+
+    color:#555;
+
+    text-align:center;
+
+}
+.cakePage{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(135deg,#ffe1ed,#ffffff);
+    transition:2s;
+}
+
+
+/* slowly dark effect */
+
+.cakePage.dark{
+
+    filter:brightness(30%);
+    background:#111;
+
+}
+/* Cake Page Size Adjustment */
+
+.cakePage{
+
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+
+}
+
+
+.cakeTitle{
+
+    font-family:'Pacifico',cursive;
+    color:#ff4f91;
+    font-size:38px;
+    margin-bottom:15px;
+
+}
+
+
+#cake{
+
+    font-size:90px;
+    margin:20px;
+
+}
+
+
+#countdown{
+
+    font-size:65px;
+    color:#ff4f91;
+    font-family:'Pacifico',cursive;
+    margin:10px;
+
+}
+
+
+#blowText{
+
+    font-size:22px;
+    color:#555;
+    margin-top:10px;
+
+}
+/* CELEBRATION PAGE */
+
+.celebrationBody{
+
+    min-height:100vh;
+    overflow:hidden;
+    background:linear-gradient(135deg,#ffdde9,#ffffff);
+
+}
+
+
+.celebration{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+#love{
+
+    font-family:'Pacifico',cursive;
+
+    color:#ff0066;
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+
+.celebration h1{
+
+    font-family:'Pacifico',cursive;
+
+    color:#ff4f81;
+
+    font-size:55px;
+
+    margin:10px;
+
+}
+
+
+.hemanth{
+
+    color:#ff0066;
+
+}
+
+
+
+.finalMessage{
+
+    max-width:700px;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    margin-top:25px;
+
+}
+
+
+.celebration button{
+
+    margin-top:35px;
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#ff4f81;
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+
+
+/* Blast from corners */
+
+.confetti:before,
+.confetti:after{
+
+    content:"🎉 🎊 ✨ 💖 🎈 ❤️";
+
+    position:absolute;
+
+    bottom:-50px;
+
+    font-size:45px;
+
+    animation:blast 4s infinite;
+
+}
+
+
+.confetti:before{
+
+    left:0;
+
+}
+
+
+.confetti:after{
+
+    right:0;
+
+    animation-delay:1s;
+
+}
+
+
+
+@keyframes blast{
+
+
+0%{
+
+transform:translate(0,0) scale(.5);
+
+opacity:0;
+
+}
+
+
+30%{
+
+opacity:1;
+
+}
+
+
+100%{
+
+transform:translate(50vw,-100vh) scale(1.5);
+
+opacity:0;
+
+}
+
+
+}
+/* Celebration Blast */
+
+.confetti:before,
+.confetti:after{
+
+    content:"🎉 🎉 🎉";
+
+    position:absolute;
+
+    bottom:-60px;
+
+    font-size:45px;
+
+    animation:blast 4s ease-out infinite;
+
+}
+
+
+.confetti:before{
+
+    left:-20px;
+
+    transform-origin:left bottom;
+
+}
+
+
+.confetti:after{
+
+    right:-20px;
+
+    transform-origin:right bottom;
+
+    animation-delay:1s;
+
+}
+
+
+
+@keyframes blast{
+
+0%{
+
+transform:translate(0,0) rotate(0deg);
+
+opacity:0;
+
+}
+
+
+20%{
+
+opacity:1;
+
+}
+
+
+100%{
+
+transform:translate(150px,-100vh) rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+.finalMessage{
+
+    max-width:700px;
+
+    font-family:"Segoe Print","Comic Sans MS",cursive;
+
+    font-size:21px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    margin-top:25px;
+
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday ❤️</title>
+
+<link rel="stylesheet" href="design.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="celebrationBody">
+    <div class="hearts">
+<span>❤️</span>
+<span>💕</span>
+<span>💗</span>
+<span>❤️</span>
+<span>💖</span>
+<span>💕</span>
+<span>❤️</span>
+</div>
+
+<div class="confetti"></div>
+
+<div class="celebration">
+
+<h2 id="love"></h2>
+
+<h1>🎉 HAPPY BIRTHDAY 🎉</h1>
+
+<h1 class="hemanth">
+HEMANTH ❤️
+</h1>
+
+<p class="finalMessage">
+
+May God bless you with endless happiness,
+good health, success and lots of smiles.
+
+Thank you for being the most amazing person in my life.
+
+I Love You Forever ❤️
+
+<br><br>
+
+Happy Birthday Once Again Hemanth 🥳🎂
+
+</p>
+
+<button onclick="goHome()">
+🏠 Back Home
+</button>
+
+</div>
+
+<script>
+
+let text="I LOVE YOU ❤️";
+
+let i=0;
+
+function typing(){
+
+if(i<text.length){
+
+document.getElementById("love").innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(typing,150);
+
+}
+
+}
+
+typing();
+
+setTimeout(function(){
+
+window.location.href="homepage.html";
+
+},15000);
+
+</script>
+
+</body>
+</html>
