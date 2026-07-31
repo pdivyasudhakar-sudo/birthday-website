@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Last Surprise ❤️</title>
+
+<link rel="stylesheet" href="design.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="hearts">
+<span>❤️</span>
+<span>💕</span>
+<span>💗</span>
+<span>❤️</span>
+<span>💖</span>
+<span>💕</span>
+<span>❤️</span>
+</div>
+<div class="cakePage">
+
+<h1 class="cakeTitle">🎂 Now Let's Blow the candle 🎂</h1>
+
+<div id="cake">
+🕯️<br>
+🎂
+</div>
+
+<h2 id="countdown"></h2>
+
+<p id="blowText"></p>
+
+</div>
+<script>
+
+const countdown = document.getElementById("countdown");
+const blowText = document.getElementById("blowText");
+const cakePage = document.querySelector(".cakePage");
+
+let count = 3;
+
+blowText.innerHTML = "Blow the candle in... ❤️";
+
+
+let timer = setInterval(function(){
+
+countdown.innerHTML = count;
+
+
+count--;
+
+
+if(count < 0){
+
+clearInterval(timer);
+
+
+// Now lights become dim after countdown
+
+blowText.innerHTML = "Make a wish Hemanth ❤️";
+
+
+cakePage.style.transition = "3s";
+cakePage.style.filter = "brightness(30%)";
+
+
+setTimeout(function(){
+
+countdown.innerHTML = "🎂";
+
+cakePage.style.filter = "brightness(100%)";
+
+
+setTimeout(function(){
+
+window.location.href="celebration.html";
+
+},2000);
+
+
+},3000);
+
+
+}
+
+
+},1000);
+
+</script>
+
+</body>
+</html>
